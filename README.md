@@ -2,4 +2,5 @@
 Energy–Structure Coordination for Infrared Polarization Fusion under Low Visibility\
 Arxiv Link: 
 # Network Architecture
-![Network Architecture](./poale-mamba.pdf)
+![Network Architecture](./fig/FIG8.pdf)
+![Network Architecture](./fig/FIG9.pdf)
