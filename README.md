@@ -145,15 +145,12 @@ LI-PI covers representative challenging conditions including:
   <b>Illustration of the LI-PI dataset and representative low-visibility scenes.</b>
 </p>
 
-## Dataset Download
+# Download
 
-The LI-PI dataset can be downloaded from Baidu Netdisk.
-
-| Resource | Download | Password |
-|---|---|---|
-| LI-PI Dataset | [Baidu Netdisk](https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c) | `a79c` |
-
-The released dataset contains the training, validation, and independent testing subsets used in our experiments.
+| Resource | Description | Download | Password |
+|---|---|---|---|
+| LI-PI Dataset | Training, validation, and test data used in this work | [Baidu Netdisk](https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c) | `a79c` |
+| Pretrained Model | Pretrained IRPol-Fuse checkpoint | [Baidu Netdisk](https://pan.baidu.com/s/1xmbyjUPe4AkXTUbiitNIHw?pwd=mn32) | `mn32` |
 
 ---
 
@@ -162,43 +159,10 @@ The released dataset contains the training, validation, and independent testing 
 Please install the required environment according to `requirements.txt`.
 
 ```bash
-# TODO: Environment installation commands
+pip install requirements.txt
 ```
 
 The detailed environment configuration will be added here.
-
----
-
-# Dataset Preparation
-
-After downloading LI-PI, please place the dataset in the corresponding directory and modify the paths in the training/testing commands according to your local environment.
-
-An example repository structure is:
-
-```text
-IRPol-Fuse/
-├── README.md
-├── requirements.txt
-│
-├── fig/
-│   ├── fig1.png
-│   ├── fig2.png
-│   ├── fig3.png
-│   ├── fig4.png
-│   ├── fig5.png
-│   ├── fig8.png
-│   └── fig9.png
-│
-├── data/
-│   └── LI-PI/
-│
-├── checkpoints_retrain/
-│
-├── train.py
-├── test.py
-│
-└── ...
-```
 
 ---
 
@@ -219,22 +183,6 @@ The LI-PI dataset split used in the paper is:
 Training   : 90 image pairs
 Validation : 10 image pairs
 Testing    : 10 image pairs
-```
-
-The final loss configuration is:
-
-```text
-lambda_fusion = 1.0
-lambda_ir     = 2.0
-lambda_pol    = 2.5
-```
-
-The final IHJ configuration is:
-
-```text
-Injection ratio : 0.60
-Sharpness       : 15
-Threshold       : 0.62
 ```
 
 ---
@@ -431,75 +379,6 @@ Detailed sensitivity analyses are provided in the paper.
 
 ---
 
-# Computational Complexity
-
-| Method | FLOPs (G) ↓ | Parameters (M) ↓ | Time (ms) ↓ |
-|---|---:|---:|---:|
-| IRPol-Fuse | 2608.007 | 4.553 | 515.279 |
-| TIPFNet | 1569.841 | 4.151 | 768.695 |
-| CPIFuse | 275.347 | 0.874 | 174.944 |
-| LFDT | 3067.163 | 17.898 | 953.243 |
-| LUT-Fuse | 13.200 | 0.008 | 13.997 |
-| PIPFNet | 121.133 | 0.034 | 455.377 |
-| DT-F | 1173.224 | 0.834 | 1776.724 |
-| FusionMamba | 688.729 | 85.489 | 306.040 |
-| CDDFuse | 2983.823 | 1.186 | 1243.021 |
-| SeAFusion | 277.797 | 0.167 | 74.086 |
-
-IRPol-Fuse is designed as a performance-oriented energy-structure coordination framework rather than a lightweight architecture.
-
----
-
-# Model Zoo
-
-| Model | Training Dataset | Download | Password |
-|---|---|---|---|
-| IRPol-Fuse | LI-PI | [Baidu Netdisk](https://pan.baidu.com/s/1xmbyjUPe4AkXTUbiitNIHw?pwd=mn32) | `mn32` |
-
----
-
-# Download
-
-## LI-PI Dataset
-
-- **Baidu Netdisk:** [Download LI-PI](https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c)
-- **Password:** `a79c`
-
-## Pretrained Model
-
-- **Baidu Netdisk:** [Download Pretrained Model](https://pan.baidu.com/s/1xmbyjUPe4AkXTUbiitNIHw?pwd=mn32)
-- **Password:** `mn32`
-
----
-
-# Repository Structure
-
-```text
-IRPol-Fuse/
-├── README.md
-├── requirements.txt
-│
-├── fig/
-│   ├── fig1.png    # LI-PI qualitative comparison
-│   ├── fig2.png    # LDDRS qualitative comparison
-│   ├── fig3.png    # MSRS qualitative comparison
-│   ├── fig4.png    # M3FD qualitative comparison
-│   ├── fig5.png    # LI-PI dataset illustration
-│   ├── fig8.png    # overall architecture
-│   └── fig9.png    # PAF / IHJ / PTJ modules
-│
-├── data/
-│   └── LI-PI/
-│
-├── checkpoints_retrain/
-│
-├── train.py
-├── test.py
-│
-└── ...
-```
-
----
 
 # Citation
 
