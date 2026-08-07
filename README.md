@@ -1,5 +1,4 @@
-# IRPol-Fuse：Energy–Structure Coordination for Infrared Polarization Fusion under Low Visibility
-
+# IRPol-Fuse:Energy–Structure Coordination for Infrared Polarization Fusion under Low Visibility
 
 <p align="center">
   <b>Zhuangfan Huang</b>,
@@ -11,8 +10,15 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_ARXIV_LINK">
-    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg">
+  <b>Infrared Physics & Technology, 2026, Article 106788</b>
+</p>
+
+<p align="center">
+  <a href="https://doi.org/10.1016/j.infrared.2026.106788">
+    <img src="https://img.shields.io/badge/DOI-10.1016%2Fj.infrared.2026.106788-blue.svg">
+  </a>
+  <a href="https://www.sciencedirect.com/science/article/pii/S1350449526004238">
+    <img src="https://img.shields.io/badge/Paper-ScienceDirect-orange.svg">
   </a>
   <a href="https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c">
     <img src="https://img.shields.io/badge/Dataset-LI--PI-blue.svg">
@@ -23,10 +29,11 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_ARXIV_LINK">Paper</a> |
+  <a href="https://doi.org/10.1016/j.infrared.2026.106788">Paper</a> |
+  <a href="https://www.sciencedirect.com/science/article/pii/S1350449526004238">ScienceDirect</a> |
   <a href="#li-pi-dataset">Dataset</a> |
   <a href="#experimental-results">Results</a> |
-  <a href="#pretrained-model">Model</a> |
+  <a href="#download">Download</a> |
   <a href="#installation">Installation</a> |
   <a href="#training">Training</a> |
   <a href="#testing">Testing</a>
@@ -36,9 +43,9 @@
 
 ## News
 
-- **[2026.xx.xx]** IRPol-Fuse is available on arXiv.
-- **[2026.xx.xx]** The source code and pretrained model are released.
-- **[2026.xx.xx]** The LI-PI dataset is released.
+- **[2026]** IRPol-Fuse is published in **Infrared Physics & Technology** ([DOI: 10.1016/j.infrared.2026.106788](https://doi.org/10.1016/j.infrared.2026.106788)).
+- **[2026]** The LI-PI dataset and pretrained IRPol-Fuse model are publicly available.
+- **[2026]** Source code is available in this repository.
 
 ---
 
@@ -145,6 +152,8 @@ LI-PI covers representative challenging conditions including:
   <b>Illustration of the LI-PI dataset and representative low-visibility scenes.</b>
 </p>
 
+---
+
 # Download
 
 | Resource | Description | Download | Password |
@@ -159,10 +168,8 @@ LI-PI covers representative challenging conditions including:
 Please install the required environment according to `requirements.txt`.
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
-
-The detailed environment configuration will be added here.
 
 ---
 
@@ -200,16 +207,6 @@ python test.py \
 ```
 
 The fused images will be saved to the directory specified by `--out_dir`.
-
----
-
-# Pretrained Model
-
-The pretrained IRPol-Fuse model can be downloaded from Baidu Netdisk.
-
-| Model | Training Dataset | Download | Password |
-|---|---|---|---|
-| IRPol-Fuse | LI-PI | [Baidu Netdisk](https://pan.baidu.com/s/1xmbyjUPe4AkXTUbiitNIHw?pwd=mn32) | `mn32` |
 
 ---
 
@@ -379,21 +376,26 @@ Detailed sensitivity analyses are provided in the paper.
 
 ---
 
-
 # Citation
 
 If you find **IRPol-Fuse** or the **LI-PI dataset** useful in your research, please cite our paper:
 
+**Paper:** [IRPol-Fuse: Energy–structure coordination for infrared polarization fusion under low visibility](https://doi.org/10.1016/j.infrared.2026.106788)  
+**Journal:** *Infrared Physics & Technology*, 2026, Article 106788.
+
 ```bibtex
-@article{huang2026irpol,
-  title   = {IRPol-Fuse: Energy--Structure Coordination for Infrared Polarization Fusion under Low Visibility},
-  author  = {Huang, Zhuangfan and Fang, Chusheng and Li, Xiaosong and Liu, Yang and Cheng, Xiaoqi and Tan, Haishu},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+@article{HUANG2026106788,
+  title    = {IRPol-Fuse: Energy--structure coordination for infrared polarization fusion under low visibility},
+  journal  = {Infrared Physics \& Technology},
+  pages    = {106788},
+  year     = {2026},
+  issn     = {1350-4495},
+  doi      = {10.1016/j.infrared.2026.106788},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1350449526004238},
+  author   = {Zhuangfan Huang and Chusheng Fang and Xiaosong Li and Yang Liu and Xiaoqi Cheng and Haishu Tan},
+  keywords = {Infrared-polarization image fusion, Energy-structure coordination, Low-visibility imaging}
 }
 ```
-
-The BibTeX entry will be updated after the final journal publication.
 
 ---
 
@@ -406,9 +408,3 @@ We sincerely thank the authors of the public datasets and comparison methods use
 # Contact
 
 For questions regarding the paper, source code, pretrained model, or LI-PI dataset, please open an issue in this repository.
-
----
-
-# License
-
-The code and LI-PI dataset license will be provided upon release.
