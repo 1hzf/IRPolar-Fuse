@@ -10,15 +10,11 @@
 </p>
 
 <p align="center">
-  <b>Infrared Physics & Technology, 2026, Article 106788</b>
-</p>
-
-<p align="center">
   <a href="https://doi.org/10.1016/j.infrared.2026.106788">
     <img src="https://img.shields.io/badge/DOI-10.1016%2Fj.infrared.2026.106788-blue.svg">
   </a>
-  <a href="https://www.sciencedirect.com/science/article/pii/S1350449526004238">
-    <img src="https://img.shields.io/badge/Paper-ScienceDirect-orange.svg">
+  <a href="YOUR_ARXIV_LINK">
+    <img src="https://img.shields.io/badge/arXiv-Preprint-b31b1b.svg">
   </a>
   <a href="https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c">
     <img src="https://img.shields.io/badge/Dataset-LI--PI-blue.svg">
@@ -30,7 +26,7 @@
 
 <p align="center">
   <a href="https://doi.org/10.1016/j.infrared.2026.106788">Paper</a> |
-  <a href="https://www.sciencedirect.com/science/article/pii/S1350449526004238">ScienceDirect</a> |
+  <a href="YOUR_ARXIV_LINK">arXiv</a> |
   <a href="#li-pi-dataset">Dataset</a> |
   <a href="#experimental-results">Results</a> |
   <a href="#download">Download</a> |
@@ -38,14 +34,6 @@
   <a href="#training">Training</a> |
   <a href="#testing">Testing</a>
 </p>
-
----
-
-## News
-
-- **[2026]** IRPol-Fuse is published in **Infrared Physics & Technology** ([DOI: 10.1016/j.infrared.2026.106788](https://doi.org/10.1016/j.infrared.2026.106788)).
-- **[2026]** The LI-PI dataset and pretrained IRPol-Fuse model are publicly available.
-- **[2026]** Source code is available in this repository.
 
 ---
 
