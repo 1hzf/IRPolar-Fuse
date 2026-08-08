@@ -1,4 +1,8 @@
-# IRPol-Fuse:Energy–Structure Coordination for Infrared Polarization Fusion under Low Visibility
+# IRPol-Fuse: Energy–Structure Coordination for Infrared Polarization Fusion under Low Visibility
+
+<p align="center">
+  🌐 <b>English</b> | <a href="./README_CN.md">简体中文</a>
+</p>
 
 <p align="center">
   <b>Zhuangfan Huang</b>,
