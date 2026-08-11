@@ -17,7 +17,7 @@
   <a href="https://doi.org/10.1016/j.infrared.2026.106788">
     <img src="https://img.shields.io/badge/DOI-10.1016%2Fj.infrared.2026.106788-blue.svg">
   </a>
-  <a href="YOUR_ARXIV_LINK">
+  <a href="https://arxiv.org/abs/2608.07848">
     <img src="https://img.shields.io/badge/arXiv-Preprint-b31b1b.svg">
   </a>
   <a href="https://pan.baidu.com/s/13ObQ8VmiruiBUz1A_9YMcA?pwd=a79c">
@@ -30,7 +30,7 @@
 
 <p align="center">
   <a href="https://doi.org/10.1016/j.infrared.2026.106788">Paper</a> |
-  <a href="YOUR_ARXIV_LINK">arXiv</a> |
+  <a href="https://arxiv.org/abs/2608.07848">arXiv</a> |
   <a href="#li-pi-dataset">Dataset</a> |
   <a href="#experimental-results">Results</a> |
   <a href="#download">Download</a> |
